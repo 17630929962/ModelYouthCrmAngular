@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="text-center">
+    <!-- logo -->
+    <div>
+      <a [routerLink]="['/']">
+        <img class="logo" src="/assets/images/logos/logo-txt-color-shield.svg">
+      </a>
+    </div>
+
+    <!-- 标题信息 -->
+    <div class="account-slogon">
+      <h2 class="account-slogon-main "></h2>
+      <p class="account-slogon-subhead">
+        <span>欢迎使用塑青春CRM <a href="http://www.modelyouth.cn/" title="塑青春官网" target="_blank">modelyouth.cn</a>
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- 租户切换 -->
+  <div *ngIf="showTenantChange()">
+    <tenant-change></tenant-change>
+  </div>
+
+
+  <router-outlet></router-outlet>
+
+  <!-- 语言选择 -->
+  <div class="text-center">{{l('LanguageSelection')}}</div>
+  <account-languages></account-languages>
+
+  <!-- 底部信息 -->
+  <global-footer [links]="links">
+    Copyright
+    <i class="anticon anticon-copyright"></i> {{currentYear}}
+    <b>Version </b>{{versionText}}
+    <a href="http://www.modelyouth.cn/" target="_blank">塑青春·IT部门</a>出品
+  </global-footer>
+
+</div>
