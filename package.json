@@ -45,7 +45,7 @@
     "ng-alain": "2.0.1",
     "abp-ng2-module": "^3.2.3",
     "abp-web-resources": "^3.8.4",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.21",
     "famfamfam-flags": "^1.0.0",
     "font-awesome": "^4.7.0",
