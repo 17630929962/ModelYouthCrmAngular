@@ -46,7 +46,7 @@
     "abp-ng2-module": "^3.2.3",
     "abp-web-resources": "^3.8.4",
     "moment": "^2.22.2",
-    "moment-timezone": "^0.5.21",
+    "moment-timezone": "^0.5.35",
     "famfamfam-flags": "^1.0.0",
     "font-awesome": "^4.7.0",
     "core-js": "^2.5.4",
